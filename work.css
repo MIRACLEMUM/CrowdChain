@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .dot-area {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+  }
+  
+  .dot {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    animation: bounce 4s infinite ease-in-out;
+  }
+  
+  .dot.big {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .dot.small {
+    width: 10px;
+    height: 10px;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  
+  .form-area {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  
+  .tabs span {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .tabs .active {
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 4px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  form a {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  form p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  form p span {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  #signup-form {
+    display: none;
+  }
+  
+  #login-form input,
+  #signup-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  #signup-form button {
+    background-color: #2196F3;
+  }
+  
+  #signup-form button:hover {
+    background-color: #1e88e5;
+  }
+  
