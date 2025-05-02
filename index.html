@@ -45,8 +45,8 @@
 
       <h2 id="form-title">Create an account</h2>
 
-      <!-- Login Form (Hidden by Default) -->
-      <form id="login-form" onsubmit="return validateLoginForm()" style="display: none;">
+      <!-- Login Form -->
+      <form id="login-form" onsubmit="return validateLoginForm()" action="#">
         <label for="login-email">Email</label>
         <input id="login-email" type="email" placeholder="Email" required />
 
@@ -67,8 +67,8 @@
         </button>
       </form>
 
-      <!-- Sign Up Form (Visible by Default) -->
-      <form id="signup-form" onsubmit="return validateSignupForm()">
+      <!-- Sign Up Form -->
+      <form id="signup-form" onsubmit="return validateSignupForm()" action="#">
         <label for="signup-email">Email</label>
         <input id="signup-email" type="email" placeholder="Email" required />
 
@@ -117,11 +117,26 @@
       const form = document.getElementById('login-form');
       const email = form.querySelector('input[type="email"]');
       const password = form.querySelector('input[type="password"]');
+
       if (!email.value || !password.value) {
         alert("Please fill in all fields.");
         return false;
       }
-      return true;
+
+      // Check if credentials are correct (using localStorage here for demo purposes)
+      const storedEmail = localStorage.getItem("userEmail");
+      const storedPassword = localStorage.getItem("userPassword");
+
+      if (email.value === storedEmail && password.value === storedPassword) {
+        // Redirect to landing.html after successful login
+        window.location.href = "landing.html"; // Redirect to your landing page
+
+        return false; // Prevent form submission
+      } else {
+        alert("Invalid login credentials.");
+      }
+
+      return false; // Prevent form submission
     }
 
     function validateSignupForm() {
@@ -139,7 +154,15 @@
         alert("Passwords do not match.");
         return false;
       }
-      return true;
+
+      // Store the new user's email and password in localStorage (for demo purposes)
+      localStorage.setItem("userEmail", email.value);
+      localStorage.setItem("userPassword", password.value);
+
+      // Switch to login form after successful signup
+      toggleForm('login');
+      alert("Sign-up successful! Please log in.");
+      return false; // Prevent form submission
     }
 
     function continueWithGoogle() {
