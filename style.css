@@ -264,7 +264,7 @@ form p {
 }
 
 
-/* Add this to your CSS file */
+
 @media screen and (max-width: 600px) {
   .dot-area {
     display: none; /* Hide the dot background on smaller screens */
