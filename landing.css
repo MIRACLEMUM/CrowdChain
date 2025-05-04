@@ -1,0 +1,151 @@
+/* Reset and font setup */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: #0a0a0a;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1549921296-3a6b4469b3d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .create-btn {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    text-align: center;
+    margin-bottom: 10vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  
+  .hero-content .highlight {
+    color: #f4b400; /* Gold-like crypto color */
+  }
+  
+  .hero-buttons {
+    margin-top: 1.5rem;
+  }
+  
+  .primary {
+    background-color: #1e90ff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    margin-right: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .secondary {
+    background-color: transparent;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  /* Campaign Section */
+.campaigns {
+    background-color: #f2f2f2;
+    padding: 4rem 2rem;
+    color: #222;
+    text-align: center;
+  }
+  
+  .campaigns h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .campaign-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .campaign-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    position: relative;
+  }
+  
+  .campaign-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .donate-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #1e90ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .details {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+  
+
+  
