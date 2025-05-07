@@ -1,92 +1,27 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CrowdChain</title>
-  <link rel="stylesheet" href="landing.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="landing.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <div class="navbar">
-      <div class="logo">CROWDCHAIN</div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <button class="create-btn">+ Create Campaign</button>
-      </nav>
-    </div>
-    <div class="hero-content">
-      <h1><span>Support Causes</span><br>With <span class="highlight">Crypto</span></h1>
-      <p>Web3 Crowdfunding Platform</p>
-      <div class="hero-buttons">
-        <button class="primary">Create Campaign</button>
-        <button class="secondary">Donate Now</button>
-      </div>
+  <header class="navbar">
+    <div class="logo">CROWDCHAIN</div>
+
+    <div class="nav-center">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <input type="text" placeholder="search for Campaigns......" class="search-bar" />
     </div>
 
-    <section class="campaigns">
-        <h2>Popular Campaigns</h2>
-        <div class="campaign-grid">
-          <div class="campaign-card">
-            <img src="https://via.placeholder.com/300x180/000000/FFFFFF?text=SOVIONIS" alt="Sovionis" />
-            <button class="donate-btn">Donate Now</button>
-            <div class="details">
-              <strong>SOVIONIS</strong><br>
-              <span>Goal: $800</span><br>
-              <span>$400 Raised | 50% Funded</span>
-            </div>
-          </div>
-      
-          <div class="campaign-card">
-            <img src="https://via.placeholder.com/300x180/EAEAEA/333333?text=APIFY" alt="APIFY" />
-            <button class="donate-btn">Donate Now</button>
-            <div class="details">
-              <strong>APIFY</strong><br>
-              <span>Goal: $1000</span><br>
-              <span>$100 Raised | 10% Funded</span>
-            </div>
-          </div>
-      
-          <div class="campaign-card">
-            <img src="https://via.placeholder.com/300x180/004d00/FFFFFF?text=BLAST" alt="BLAST" />
-            <button class="donate-btn">Donate Now</button>
-            <div class="details">
-              <strong>BLAST</strong><br>
-              <span>Goal: $1000</span><br>
-              <span>$900 Raised | 90% Funded</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="fundraising-process">
-        <h2>Fundraising Process</h2>
-        <div class="process-grid">
-          <div class="step">
-            <i class="fas fa-user-plus icon"></i>
-            <h3>Firstly</h3>
-            <p><strong>Create your account</strong><br>Design and create a fundraising project in our web3 engine panel.</p>
-          </div>
-          <div class="step">
-            <i class="fas fa-pencil-alt icon"></i>
-            <h3>Secondly</h3>
-            <p><strong>Create and plan a campaign account</strong><br>Tailor your campaign objectives and economics exactly to your needs.</p>
-          </div>
-          <div class="step">
-            <i class="fas fa-bullhorn icon"></i>
-            <h3>Thirdly</h3>
-            <p><strong>Start your fundraising</strong><br>Use our tools to promote your collection and keep your hand in at all times.</p>
-          </div>
-          <div class="step">
-            <i class="fas fa-trophy icon"></i>
-            <h3>Finally</h3>
-            <p><strong>Success you got the fund</strong><br>Your token is listed on crypto exchange. The opportunities are endless.</p>
-          </div>
-        </div>
-      </section>
-      
+    <div class="nav-right">
+      <button class="auth-btn">Sign In / Sign Up</button>
+      <button class="campaign-btn">Create Campaign</button>
+    </div>
   </header>
 </body>
 </html>
