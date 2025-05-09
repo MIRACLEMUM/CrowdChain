@@ -1,79 +1,222 @@
-/* styles.css */
-body {
+/* === RESET & BASE === */
+* {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #fff;
+}
+
+
+.hero-wrapper {
+  background-image: url('images/hero\ image.webp'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* === header === */
+.main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 20px 40px;
+  background: transparent; 
 }
 
 .logo {
   font-size: 24px;
-  font-weight: 600;
-  color: #333;
+  font-weight: bold;
+  color: #fff;
 }
 
-.nav-center {
+.nav-links {
+  list-style: none;
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
-.nav-center a {
+.nav-links a {
+  color: black;
   text-decoration: none;
-  color: #333;
   font-weight: 500;
+  transition: color 0.3s;
+  font-size: large;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: blue;
 }
 
 .search-bar {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 20x;
-  font-size: 14px;
-  width: 500px;
-  background-color: aliceblue;
-  gap: 15px;
-}
-
-.nav-right {
   display: flex;
+  gap: 10px;
   align-items: center;
-  gap: 18px;
 }
 
-.auth-btn {
-  background-color: transparent;
-  border: 1px solid #007BFF;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: 500;
-  color: #007BFF;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.auth-btn:hover {
-  background-color: #007BFF;
-  color: white;
-}
-
-.campaign-btn {
-  background-color: #007BFF;
-  color: white;
-  padding: 8px 20px;
+.search-bar input {
+  padding: 8px 12px;
+  border-radius: 4px;
   border: none;
-  border-radius: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
+  outline: none;
+  font-size: 14px;
+  width: 220px;
 }
 
-.campaign-btn:hover {
+.search-bar button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* === HERO SECTION === */
+.hero {
+  padding: 100px 40px 120px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero .highlight {
+  color: #ffc107; /* Yellow */
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .create {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-buttons .donate {
+  background-color: transparent;
+  color: #fff;
+  padding: 12px 24px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
   opacity: 0.9;
 }
+
+.campaigns-section {
+  padding: 40px 20px;
+  background-color: #d9d9d9;
+  text-align: center;
+}
+
+.campaigns-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.campaign-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.campaign-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.campaign-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.campaign-card p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.campaign-card button {
+  background-color:#333;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.campaign-card button:hover {
+  background-color: #444;
+}
+
+.explore-btn {
+  margin-top: 30px;
+}
+
+.explore-btn button {
+  padding: 12px 20px;
+  background-color:transparent;
+  color: black;
+  border:1.5px solid black;
+  border-radius: 6px ;
+  cursor: pointer;
+}
+
+.explore-btn button:hover {
+   background-color: black;
+  color: white;
+}
+
+
+
