@@ -1,4 +1,5 @@
-/* === RESET & BASE === */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,22 +12,24 @@ body {
   color: #fff;
 }
 
-
+/* Hero Wrapper with animation */
 .hero-wrapper {
-  background-image: url('images/hero\ image.webp'); 
+  background-image: url('images/people-celebrating-world-population-day\ \(1\).jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  animation: fadeIn 2s ease-in-out;
 }
 
-/* === header === */
+/* Header section */
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: transparent; 
+  background: transparent;
+  animation: slideIn 1s ease-out;
 }
 
 .logo {
@@ -36,18 +39,23 @@ body {
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
 }
 
 .nav-links a {
-  color: black;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-  font-size: large;
-  font-weight: 500;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -83,11 +91,12 @@ body {
   background-color: #0056b3;
 }
 
-/* === HERO SECTION === */
+/* -- HERO SECTION -- */
 .hero {
   padding: 100px 40px 120px;
-  text-align: center;
   color: #fff;
+  padding-top: 30px;
+  animation: fadeInUp 2s ease-out;
 }
 
 .hero h1 {
@@ -97,7 +106,7 @@ body {
 }
 
 .hero .highlight {
-  color: #ffc107; /* Yellow */
+  color: #ffc107;
 }
 
 .hero p {
@@ -107,7 +116,6 @@ body {
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -120,6 +128,7 @@ body {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .hero-buttons .donate {
@@ -130,16 +139,19 @@ body {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .hero-buttons button:hover {
   opacity: 0.9;
+  transform: scale(1.05);
 }
 
 .campaigns-section {
   padding: 40px 20px;
   background-color: #d9d9d9;
   text-align: center;
+  animation: fadeInUp 1.5s ease-out;
 }
 
 .campaigns-section h2 {
@@ -158,22 +170,29 @@ body {
 
 .campaign-card {
   background: white;
-  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 300px;
+  overflow: hidden;
   text-align: center;
+  padding: 0;
+  opacity: 0;
+  animation: fadeInUp 2s forwards;
 }
 
 .campaign-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 15px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
-.campaign-card h3 {
+.campaign-card-content {
+  padding: 20px;
+}
+
+.campaign-card-content h3 {
   font-size: 20px;
   margin: 10px 0;
 }
@@ -184,7 +203,7 @@ body {
 }
 
 .campaign-card button {
-  background-color:#333;
+  background-color: #333;
   font-size: 17px;
   font-weight: 700;
   color: white;
@@ -206,18 +225,92 @@ body {
 
 .explore-btn button {
   padding: 12px 20px;
-  background-color:transparent;
+  background-color: transparent;
   color: black;
-  border:1.5px solid black;
-  border-radius: 6px ;
+  border: 1.5px solid black;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .explore-btn button:hover {
-   background-color: black;
+  background-color: black;
   color: white;
 }
 
+/* Fundraising Process Section */
+.fundraising-process {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
 
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  color: #000;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
 
+.steps-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
+.step-box {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  animation: fadeInUp 2s ease-out;
+}
+
+.step-box img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.step-box h4 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.step-box p {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
