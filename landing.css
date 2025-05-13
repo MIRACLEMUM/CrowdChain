@@ -314,3 +314,148 @@ body {
     transform: translateX(0);
   }
 }
+
+/* ========== RESPONSIVE STYLES ========== */
+@media (max-width: 1024px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .search-bar {
+    margin-top: 15px;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 15px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .campaigns-section h2,
+  .section-title {
+    font-size: 22px;
+  }
+
+  .campaigns-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons .create,
+  .hero-buttons .donate {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .campaign-card {
+    max-width: 90%;
+  }
+
+  .step-box img {
+    width: 60px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    color: black; 
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center; align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.progress-container {
+  background: #ddd;
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: green;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}

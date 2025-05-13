@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crypto Fundraising Platform</title>
   <link rel="stylesheet" href="landing.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
+
   <div class="hero-wrapper">
 
     <!-- Header Section -->
@@ -21,82 +21,90 @@
       </nav>
       <div class="search-bar">
         <input type="text" placeholder="Search for Campaigns..." />
-        <button>Create Campaign</button>
+        <button onclick="window.location.href='create-campaign.html'">Create Campaign</button>
       </div>
     </header>
 
-    
+    <!-- Hero Section -->
     <section class="hero">
-      <h1>SUPPORT CAUSES<br> WITH <span class="highlight">CRYTO</span></h1>
+      <h1>SUPPORT CAUSES<br> WITH <span class="highlight">CRYPTO</span></h1>
       <p>Web3 Crowdfunding Platform</p>
       <div class="hero-buttons">
-        <button class="create">Create Campaign</button>
-        <button class="donate">Donate Now</button>
+        <button class="create" onclick="window.location.href='create-campaign.html'">Create Campaign</button>
+        <button class="donate" onclick="window.location.href='donate.html'">Donate Now</button>
       </div>
     </section>
 
   </div>
 
+  <!-- Campaigns Section -->
   <section class="campaigns-section">
     <h2>Popular Campaigns</h2>
     <div class="campaigns-grid">
+
       <div class="campaign-card">
-        <img src="images/SOVIONS.jpg" alt="Sovionis Logo">
+        <img src="images/SOVIONS.jpg" alt="SOVIONIS Campaign Logo">
         <h3>SOVIONIS</h3>
         <p>GOAL: $800</p>
         <p><strong>$400 Raised</strong> | 50% Funded</p>
-        <button>Donate Now</button>
+        <button type="button">Donate Now</button>
       </div>
-  
+
       <div class="campaign-card">
-        <img src="images/SOVIONS.jpg" alt="Apify Logo">
+        <img src="images/apify.jpg" alt="APIFY Campaign Logo">
         <h3>APIFY</h3>
         <p>GOAL: $1000</p>
         <p><strong>$100 Raised</strong> | 10% Funded</p>
-        <button>Donate Now</button>
+        <button type="button">Donate Now</button>
       </div>
-  
+
       <div class="campaign-card">
-        <img src="images/global3.jpg" alt="Blast Logo">
+        <img src="images/global3.jpg" alt="BLAST Campaign Logo">
         <h3>BLAST</h3>
         <p>GOAL: $1000</p>
         <p><strong>$900 Raised</strong> | 90% Funded</p>
-        <button>Donate Now</button>
+        <button type="button">Donate Now</button>
       </div>
+
     </div>
+
     <div class="explore-btn">
-      <button>Explore All Campaigns</button>
+      <button type="button">Explore All Campaigns</button>
     </div>
   </section>
 
+  <!-- Fundraising Process Section -->
   <section class="fundraising-process">
-  <h2 class="section-title">FUNDRAISING PROCESS</h2>
-  <div class="steps-wrapper">
-    <div class="step-box">
-      <img src="images/3d image1.png" alt="Create Account">
-      <h4>Firstly</h4>
-      <p><strong>Create your account</strong><br>Design and create a fundraising project in our wide-ranging panel.</p>
-    </div>
-    <div class="step-box">
-      <img src="images/3D IMAGE3.png" alt="Plan Campaign">
-      <h4>Secondly</h4>
-      <p><strong>Create and plan a campaign account</strong><br>Tailor your campaign objectives and economics exactly to your needs.</p>
-    </div>
-    <div class="step-box">
-      <img src="images/3D IMAGE4.png" alt="Start Fundraising">
-      <h4>Thirdly</h4>
-      <p><strong>Start your fundraising</strong><br>Use our tools to promote your collection and raise the needed sum in all times.</p>
-    </div>
-    <div class="step-box">
-      <img src="images/3d image2.png" alt="Success">
-      <h4>Finally</h4>
-      <p><strong>Success you got the fund</strong><br>Your token is listed on crypto exchange. The opportunities are endless.</p>
-    </div>
-  </div>
-</section>
+    <h2 class="section-title">FUNDRAISING PROCESS</h2>
+    <div class="steps-wrapper">
 
+      <div class="step-box">
+        <img src="images/3d image1.png" alt="Create Account Illustration">
+        <h4>Firstly</h4>
+        <p><strong>Create your account</strong><br>Design and create a fundraising project in our wide-ranging panel.</p>
+      </div>
 
-  
+      <div class="step-box">
+        <img src="images/3D IMAGE3.png" alt="Plan Campaign Illustration">
+        <h4>Secondly</h4>
+        <p><strong>Create and plan a campaign account</strong><br>Tailor your campaign objectives and economics exactly to your needs.</p>
+      </div>
+
+      <div class="step-box">
+        <img src="images/3D IMAGE4.png" alt="Start Fundraising Illustration">
+        <h4>Thirdly</h4>
+        <p><strong>Start your fundraising</strong><br>Use our tools to promote your collection and raise the needed sum in all times.</p>
+      </div>
+
+      <div class="step-box">
+        <img src="images/3d image2.png" alt="Successful Fundraising Illustration">
+        <h4>Finally</h4>
+        <p><strong>Success you got the fund</strong><br>Your token is listed on crypto exchange. The opportunities are endless.</p>
+      </div>
+
+    </div>
+  </section>
+  <script src="script.js"></script>
 
 </body>
 </html>
