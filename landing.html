@@ -8,35 +8,41 @@
 </head>
 <body>
 
-  <div class="hero-wrapper">
+    <div class="hero-wrapper">
 
-    <!-- Header Section -->
-    <header class="main-header">
-      <div class="logo">CROWDCHAIN</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Search for Campaigns..." />
-        <button onclick="window.location.href='create-campaign.html'">Create Campaign</button>
-      </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>SUPPORT CAUSES<br> WITH <span class="highlight">CRYPTO</span></h1>
+  <!-- ✅ NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="logo">CROWDCHAIN</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <input type="text" placeholder="Search for Campaigns..." class="search-bar"/>
+      <button class="btn connect-wallet">Connect Wallet</button>
+      <button class="btn create-campaign">Create Campaign</button>
+    </div>
+  </header>
+
+  <!-- ✅ HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>SUPPORT CAUSES<br>WITH <span class="highlight">CRYTO</span></h1>
       <p>Web3 Crowdfunding Platform</p>
       <div class="hero-buttons">
-        <button class="create" onclick="window.location.href='create-campaign.html'">Create Campaign</button>
-        <button class="donate" onclick="window.location.href='donate.html'">Donate Now</button>
+        <button class="btn create-campaign">Create Campaign</button>
+        <button class="btn donate">Donate Now</button>
       </div>
-    </section>
+    </div>
+  
+  </section>
 
-  </div>
 
+    </div>
   <!-- Campaigns Section -->
   <section class="campaigns-section">
     <h2>Popular Campaigns</h2>
@@ -104,6 +110,8 @@
 
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+
   <script src="script.js"></script>
 
 </body>
