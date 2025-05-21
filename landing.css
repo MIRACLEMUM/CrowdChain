@@ -14,40 +14,38 @@ body {
 
 /* Background wrapper containing nav + hero */
 .hero-wrapper {
-  background-image: url('images/people-celebrating-world-population-day\ \(1\).jpg'); /* put your image path here */
+  background-image: url('images/people-celebrating-world-population-day (1).jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* add a dark overlay with gradient for better text readability */
   position: relative;
   color: white;
 }
 
-/* Optional overlay on hero-wrapper to darken background for contrast */
+
 .hero-wrapper::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* adjust opacity for desired darkness */
+  background: rgba(0, 0, 0, 0.6); 
   z-index: 0;
 }
 
-/* Make sure navbar and hero content sit above the overlay */
 .navbar, .hero {
   position: relative;
   z-index: 1;
 }
 
-/* Navbar styles */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: transparent; /* make transparent to show background image */
+  background: transparent; 
   color: white;
   font-weight: bold;
-  flex-wrap: wrap; /* Added for responsiveness */
+  flex-wrap: wrap; 
 }
 
 /* Nav links */
@@ -55,7 +53,7 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  flex-wrap: wrap; /* Wrap links on smaller screens */
+  flex-wrap: wrap; 
   margin-top: 0;
 }
 
@@ -63,14 +61,14 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  white-space: nowrap; /* prevent breaking nav links */
+  white-space: nowrap; 
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
 
-/* Search and buttons in nav */
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -86,9 +84,9 @@ body {
   min-width: 150px;
 }
 
-/* Buttons styling */
+
 .btn {
-  background-color: #4CAF50; /* green */
+  background-color: #4CAF50; 
   border: none;
   padding: 0.5rem 1rem;
   color: white;
@@ -103,11 +101,11 @@ body {
   background-color: #45a049;
 }
 
-/* Hero Section */
+
 .hero {
   padding: 4rem 2rem;
   text-align: center;
-  background: transparent; /* transparent so background image shows */
+  background: transparent; 
   color: white;
   max-width: 1200px;
   margin: 0 auto;
@@ -121,17 +119,17 @@ body {
 }
 
 .highlight {
-  color: #FFD700; /* gold highlight */
+  color: #FFD700; 
   font-weight: 900;
 }
 
 .hero-content p {
   font-size: 1.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: left;
 }
 
-/* Hero buttons */
+
 .hero-buttons {
   display: flex;
   justify-content: flex-start;
@@ -145,7 +143,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Animation for navbar sliding down */
+
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -551,4 +549,97 @@ body {
   background: none;
   border: none;
   color: #333;
+}
+
+
+/* Divider line above footer */
+.divider-line {
+  height: 10px;
+  background-color: #000; /* Black divider */
+  width: 100%;
+}
+
+/* Footer styling */
+footer {
+  background-color: #2b0a3d; /* Dark purple */
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 20px 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer-bottom p {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #fff;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-section {
+    margin: 10px 0;
+  }
 }
