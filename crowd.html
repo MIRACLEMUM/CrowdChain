@@ -5,33 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Invest in Projects</title>
   <link rel="stylesheet" href="crowd.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
   <section class="hero-section">
     <header class="navbar">
-      <div class="logo">CrowdChain</div>
-      <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-      </nav>
+      <div class="navbar-left">
+        <div class="logo">CrowdChain</div>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+        </nav>
+      </div>
       <div class="nav-buttons">
-        <button class="connect">Connect Wallet</button>
-        <button class="create">Create Campaign</button>
+        <button class="transparent-btn">Connect Wallet</button>
+        <button class="transparent-btn">Create Campaign</button>
       </div>
     </header>
 
     <div class="hero-content">
-      <div class="hero-text">
+      <div class="left-hero">
         <h1>INVEST IN PROJECTS</h1>
         <p>Web3 Crowdfunding Platform</p>
-        <button class="donate-btn">Donate Now</button>
-      </div>
 
-      <div class="search-box">
-        <input type="text" placeholder="Search for Campaigns..." />
+        <div class="action-row">
+          <button class="donate-btn">Donate Now</button>
+
+          <button class="search-button">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for Campaigns..." />
+          </button>
+        </div>
       </div>
     </div>
   </section>
+  <section class="featured-campaign">
+  <div class="campaign-header">
+    <img src="images/SOVIONS.jpg" alt="Sovionis Logo" class="campaign-logo" />
+    <h2>SOVIONIS</h2>
+  </div>
+  <p class="campaign-description">
+    IPFS (InterPlanetary File System) is a decentralized, peer-to-peer file storage protocol. 
+    It stores and retrieves files using unique content hashes instead of traditional URLs. Files 
+    are broken into chunks and distributed across multiple nodes in the network. This setup ensures 
+    data is resilient, tamper-proof, and not dependent on a single server.
+    <br><br>
+    IPFS is widely used in Web3 applications, especially for storing NFT metadata and assets. 
+    It enables secure, trustless access to files without relying on centralized services. 
+    Projects like Filecoin, Pinata, and NFT.Storage work with IPFS for improved file persistence.
+    <br><br>
+    IPFS also supports efficient content delivery by pulling files from the nearest available node. 
+    It helps preserve content in a censorship-resistant and permanent way. Overall, IPFS is a 
+    critical building block for decentralized web infrastructure.
+  </p>
+
+  <div class="campaign-details">
+    <p><strong>Total raised:</strong> $11.20M</p>
+    <p><strong>Goal:</strong> $800</p>
+    <button class="donate-button">Donate Now</button>
+  </div>
+
+  <div class="campaign-links">
+    <div class="links-group">
+      <h4>Website:</h4>
+      <a href="#">Website</a>
+      <a href="#">Docs</a>
+    </div>
+    <div class="links-group">
+      <h4>Community:</h4>
+      <a href="#">Twitter</a>
+      <a href="#">Discord</a>
+      <a href="#">Blog</a>
+    </div>
+  </div>
+</section>
+
+<section class="campaign-cards">
+  <div class="campaign-card">
+    <p class="raised-date">Raised Jan 2025</p>
+    <h3>$2M</h3>
+    <p class="lead-investors">LEAD INVESTORS</p>
+    <div class="investor-logos">
+      <img src="investor-green.png" alt="Investor" />
+      <img src="investor-black.png" alt="Investor" />
+      <img src="investor-red.png" alt="Investor" />
+    </div>
+  </div>
+
+  <div class="campaign-card">
+    <p class="raised-date">Raised Jan 2025</p>
+    <h3>$2M</h3>
+    <p class="lead-investors">LEAD INVESTORS</p>
+    <div class="investor-logos">
+      <img src="investor-green.png" alt="Investor" />
+      <img src="investor-black.png" alt="Investor" />
+      <img src="investor-red.png" alt="Investor" />
+    </div>
+  </div>
+
+  <div class="campaign-card">
+    <p class="raised-date">Raised Jan 2025</p>
+    <h3>$2M</h3>
+    <p class="lead-investors">LEAD INVESTORS</p>
+    <div class="investor-logos">
+      <img src="investor-green.png" alt="Investor" />
+      <img src="investor-black.png" alt="Investor" />
+      <img src="investor-red.png" alt="Investor" />
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <p><strong>Supporting entrepreneurs, creators and creative communities</strong></p>
+      <p>Follow us!</p>
+      <div class="footer-socials">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>DISCOVER</h4>
+        <ul>
+          <li><a href="#">Top Funded Campaigns</a></li>
+          <li><a href="#">Tech & Innovation</a></li>
+          <li><a href="#">Creative Campaigns</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>ABOUT</h4>
+        <ul>
+          <li><a href="#">Start A Campaign</a></li>
+          <li><a href="#">Donate and Invest</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>LEARN</h4>
+        <ul>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Tech & Innovation</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>GENERAL</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  
 </body>
 </html>
