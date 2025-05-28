@@ -12,7 +12,7 @@ body {
 
 /* Hero Background */
 .hero-section {
-  background: url('images/hero10.jpg') no-repeat center center;
+  background: url('images/WhatsApp\ Image\ 2025-05-28\ at\ 07.36.18_5ed02f8a.jpg') no-repeat center center;
   background-size: cover;
   
   padding: 20px 40px;
@@ -336,3 +336,131 @@ body {
   color: #fff;
 }
 
+.footer-left,
+.footer-column {
+  padding: 0 10px;
+}
+
+.footer-column ul li a {
+  font-size: 14px;
+}
+
+
+/* Responsive Styles */
+
+
+@media (max-width: 992px) {
+  /* Medium screens - tablets */
+  .hero-section {
+    padding: 20px;
+  }
+  
+  .left-hero h1 {
+    font-size: 36px;
+  }
+  
+  .left-hero p {
+    font-size: 18px;
+  }
+  
+  .donate-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Smaller tablets / large phones */
+
+  /* Navbar stack & spacing */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navbar-left {
+    gap: 20px;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  
+  /* Hero content stack */
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  /* Text sizes */
+  .left-hero h1 {
+    font-size: 32px;
+  }
+
+  .left-hero p {
+    font-size: 16px;
+  }
+
+  /* Buttons full width */
+  .donate-btn,
+  .transparent-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 17px;
+  }
+
+  /* Action row stack */
+  .action-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* Search input full width */
+  .search-button {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small phones */
+  
+  .left-hero h1 {
+    font-size: 24px;
+  }
+
+  .left-hero p {
+    font-size: 14px;
+  }
+
+  .donate-btn,
+  .transparent-btn {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;  /* stack the two columns vertically */
+    gap: 30px;                   /* add some vertical spacing */
+  }
+
+  .footer-links {
+    flex-direction: column;      /* stack the link groups vertically */
+    gap: 25px;                   /* space between groups */
+  }
+}
